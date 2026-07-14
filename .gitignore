@@ -1,0 +1,32 @@
+# Build directory
+build/
+build_debug/
+release/
+vcpkg_installed/
+web/dist/
+web/node_modules/
+data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Test models (large files)
+test_model/
+*.stp
+*.STEP
+
+# Cache
+.cache/
+cache/
+
+# Claude
+.claude/

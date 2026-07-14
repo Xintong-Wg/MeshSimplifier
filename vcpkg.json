@@ -1,0 +1,19 @@
+{
+  "name": "mesh-simplifier",
+  "version": "0.1.0",
+  "description": "Windows-first STEP mesh simplification backend and Three.js web viewer",
+  "license": "MIT",
+  "dependencies": [
+    "opencascade",
+    "eigen3",
+    "tbb",
+    "meshoptimizer",
+    "draco",
+    "glm",
+    "spdlog",
+    "nlohmann-json"
+  ],
+  "overrides": [
+  ],
+  "builtin-baseline": "9b965a116838c6cdcd36bca60d1b81b030c8ab8d"
+}

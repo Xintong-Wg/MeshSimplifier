@@ -1,0 +1,8 @@
+file(GLOB_RECURSE SOURCES *.cpp *.h)
+add_library(MeshForgeCore STATIC ${SOURCES})
+target_include_directories(MeshForgeCore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/..)
+target_link_libraries(MeshForgeCore PUBLIC spdlog::spdlog glm::glm Threads::Threads)
+if(TARGET TBB::tbb)
+    target_link_libraries(MeshForgeCore PUBLIC TBB::tbb)
+    target_compile_definitions(MeshForgeCore PUBLIC MF_HAS_TBB=1)
+endif()
